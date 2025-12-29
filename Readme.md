@@ -15,10 +15,10 @@ $ git version
 
 Указываем данные пользователя для Git и проверям их.
 ```
-$ git config --global user.name "User User" 
+$ git config --global user.name "User Name" 
 # свое имя латиницей в кавычках
 
-$ git config --global user.email username@yandex.ru
+$ git config --global user.email username@email.ru
 # свой настоящий e-mail 
 ```
 
@@ -28,8 +28,8 @@ $ cat ~/.gitconfig
 ```
 
 В ответе будет следующее сообщение: <br>
-user.name=Username <br>
-user.email=username@yandex.ru 
+user.name=User Name <br>
+user.email=username[собака]email.ru 
 
 
 ```
@@ -94,6 +94,7 @@ $ git add .
 # добавить всю текущую папку
 ```
 
+----
 ### Выполнение коммита
 Используем команду, где в **-m** сообщении указываем кратко, какие изменения были.
 
@@ -102,6 +103,7 @@ $ git commit -m "Создан файл Readme.md"
 
 ```
 
+----
 ### Просмотр истории коммитов
 ```
 $ git log
@@ -111,12 +113,13 @@ $ git log
 >
 >$ git log
 >commit 91ca21fa86a48748226f69905f44f16c810ebce6 (HEAD -> master, origin/master)
->Author: User Name <username@email.ru>
+>Author: User Name <username[собака]email.ru>
 >Date:   Mon Dec 29 11:11:35 2025 +0300
 >
 >    Создан файл Readme.md
 
 
+----
 ### Отправить изменения на удалённый репозиторий
 
 ```
@@ -129,5 +132,5 @@ $ git push
 
 ``` 
 
-
+----
 Продолжение следует...
